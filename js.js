@@ -19,17 +19,21 @@ function calcul() {
     }
     console.log(incomeValue);
 
+    var billmonth_Lenght = billmonth.length;
+    var billmonth_Value = 0;
+    for (i = 0; i < billmonth_Lenght; i++) {
+        billmonth_Value =  Number(billmonth_Value) + Number(billmonth.item(i).value) ;
+    }
+
+
+
     var total = incomeValue - billValue;
     var soustraction = document.getElementById('soustraction');
     var budgetRestant = document.getElementById("budget");
     soustraction.innerHTML = total
 }
 
-var billmonth_Lenght = billmonth.length;
-var billmonth_Value = 0;
-for (i = 0; i < billmonth_Lenght; i++) {
-    billmonth_Value =  Number(billmonth_Value) + Number(billmonth.item(i).value) ;
-}
+
 
 var calculate = document.getElementById("calculate");
 
