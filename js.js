@@ -3,7 +3,7 @@ function calcul() {
 //class & ID
     var bill = document.getElementsByClassName("bill");
     var income = document.getElementsByClassName("income");
-
+    var income = document.getElementsByClassName("billmonth");
 
     var billLenght = bill.length;
     var billValue = 0;
@@ -23,6 +23,12 @@ function calcul() {
     var soustraction = document.getElementById('soustraction');
     var budgetRestant = document.getElementById("budget");
     soustraction.innerHTML = total
+}
+
+var billmonth_Lenght = billmonth.length;
+var billmonth_Value = 0;
+for (i = 0; i < billmonth_Lenght; i++) {
+    billmonth_Value =  Number(billmonth_Value) + Number(billmonth.item(i).value) ;
 }
 
 var calculate = document.getElementById("calculate");
