@@ -3,7 +3,7 @@ function calcul() {
 //class & ID
     var bill = document.getElementsByClassName("bill");
     var income = document.getElementsByClassName("income");
-    var income = document.getElementsByClassName("billmonth");
+    var billmonth = document.getElementsByClassName("billmonth");
 
     var billLenght = bill.length;
     var billValue = 0;
