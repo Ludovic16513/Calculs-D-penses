@@ -1,2 +1,22 @@
+#fixe, #courante, #courante, #recette, #epargne {
 
+display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
 
+h1 {
+
+}
+
+p{
+    font-weight: bold;
+}
+
+input {
+    text-align: center;
+}
+
+body{
+    font-family: 'Cinzel', serif;
+}

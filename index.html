@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <p>Budget Restant</p>
+<div id="achat"></div>
 <div id="budget">
+    <button id="ajouter">Ajouter</button>
     <button id="calculate">Calculer</button>
+    <button id="reset">Reset</button>
     <p id="soustraction"></p>
 </div>
 
-<p>Dépenses</p>
-<div id="dépense"></div>
-<p>Fixes</p>
 
+<h1>Dépenses</h1>
+<p id="dépense"></p>
 <div id="fixe">
-
+    <p>Fixes</p>
     <label>Loyer + Charges</label>
     <div>
-        <input class="bill" type="text" name="bill">
+        <input class="bill" type="number" name="bill">
     </div>
 
     <label>Eau / Electricité</label>
@@ -33,23 +36,61 @@
     <div>
         <input class="bill" type="text" name="bill">
     </div>
+
+    <label>Crédits</label>
+    <div>
+        <input class="bill" type="text" name="bill">
+    </div>
+
+    <label>Assurance habitation</label>
+    <div>
+        <input class="bill" type="text" name="bill">
+    </div>
+    <label>Assurance voiture</label>
+    <div>
+        <input class="bill" type="text" name="bill">
+    </div>
+    <label>Mutuelle santé</label>
+    <div>
+        <input class="bill" type="text" name="bill">
+    </div>
+
+    <label>Frais de garde</label>
+    <div>
+        <input class="bill" type="text" name="bill">
+    </div>
+
+    <label>Impôts sur le revenu</label>
+    <div>
+        <input class="bill" type="text" name="bill">
+    </div>
+
+    <label>Impôts locaux</label>
+    <div>
+        <input class="bill" type="text" name="bill">
+    </div>
+
 </div>
 
-<p>Courante</p>
 
 <div id="courante">
-    <label>Course</label>
+    <p>Courante</p>
+    <label>Course (par jour)</label>
     <div>
         <input class="billmonth" type="text" name="bill">
     </div>
 
-    <label>Essence</label>
+    <label>Essence (par jour)</label>
     <div>
         <input class="billmonth" type="text" name="bill">
     </div>
+
+    <label>Sortie (par mois)</label>
+    <div>
+        <input class="bill" type="text" name="bill">
+    </div>
+
 </div>
-
-
 
 <div id="recette">
     <p>Recettes</p>
@@ -60,9 +101,27 @@
 
     <label>Aide</label>
     <div>
-        <input class="income" type="text" name="income">
+        <input class="income" type="text" name="name">
+    </div>
+
+    <label>Rentes</label>
+    <div>
+        <input class="income" type="text" name="bill">
+    </div>
+
+</div>
+
+<p>Epargne</p>
+<div id="epargne">
+    <div>
+        <input class="epargne" type="text" name="name">
     </div>
 </div>
+
+
+
+
+
 
 <script type="text/javascript" src="js.js"></script>
 </body>
