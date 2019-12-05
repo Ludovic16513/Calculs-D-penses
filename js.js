@@ -1,27 +1,25 @@
 
 function calcul() {
 //class & ID
-    var bill = document.getElementsByClassName('bill');
-    var income = document.getElementsByClassName('income');
-    var calculate = document.getElementById('calculate');
-    var budgetRestant = document.getElementById('budget');
-
+    var bill = document.getElementsByClassName("bill");
+    var income = document.getElementsByClassName("income");
+    var calculate = document.getElementById("calculate");
+    var budgetRestant = document.getElementById("budget");
 
     var billLenght = bill.length;
-
+    var billValue = 0;
     for (i = 0; i < billLenght; i++) {
-        var billValue = bill[i].value;
-        console.log(billValue);
-        
+        billValue = Number(billValue) + Number(bill.item[i].value);
     }
+    console.log(billValue);
 
 
     var incomeLenght = income.length;
-
+    var incomeValue = 0;
     for (i = 0; i < incomeLenght; i++) {
-        var incomeValue = income[i].value;
+        incomeValue =  Number(incomeValue) + Number(income[i].value);
     }
-
+    console.log(incomeValue);
 }
 
-calcul()
+calcul();
