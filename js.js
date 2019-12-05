@@ -9,7 +9,7 @@ function calcul() {
     var billLenght = bill.length;
     var billValue = 0;
     for (i = 0; i < billLenght; i++) {
-        billValue = Number(billValue) + Number(bill.item[i].value);
+        billValue = Number(billValue) + Number(bill.item(i).value);
     }
     console.log(billValue);
 
@@ -17,7 +17,7 @@ function calcul() {
     var incomeLenght = income.length;
     var incomeValue = 0;
     for (i = 0; i < incomeLenght; i++) {
-        incomeValue =  Number(incomeValue) + Number(income[i].value);
+        incomeValue =  Number(incomeValue) + Number(income.item(i).value);
     }
     console.log(incomeValue);
 }
